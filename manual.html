@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html>
  <head>
-    <title>Circuito da visão</title>
-    <meta charset="UTF-8">
+   <title>Circuito da visão</title>
+   <meta charset="UTF-8">
+   <meta
+   <link type="text/css" rel="stylesheet" media="screen" href="style.css">
+   <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+   <link href="style.css" rel="stylesheet">
  </head>
 
 <body>
 
-     <div id="paginaPrincipal">
-       <div id="barraDePesquisa">
+     <div id="paginaPrincipal" class="container">
+       <div id="barraDePesquisa" class="linhaBarraDePesquisa">
           
        </div>
 
-       <div id="topicos">
+       <div id="topicos" class="linhaDeTopicos">
          <h1> Perguntas Frequentes</h1>
          <ul>
           <li> <a href="#cadastroCelula" id="link"> <h3>Como Cadastrar Célula</h3> <a> </li>
@@ -28,7 +32,7 @@
         </ul>
       </div>
 
-  <div id="conteudo">
+  <div id="conteudo" class="linhaConteudo">
     <section id="cadastroCelula">
       <h1> Como Cadastrar Célula</h1>
       <h2><p> 1 - Clique no botão indicado pelas três barras laterais¹, Cadastro² e Minha Célula³<p></h2>
@@ -51,8 +55,10 @@
       <h2>7 - Visualize as informações da nova célula para confirmar. Caso todos estejam corretos, insira sua senha¹ e clique em Continuar². Caso queira retornar a tela anterior, clique no botão Voltar³.</h2>
       <img src="fotos/FinalizandoProcesso.png">
       <h2>8 - O sistema cadastrará a célula.</h2>
+      <h2>
+      <button type="button" class="btn btn-primary"><a href=#topicos id="linkVoltar">Voltar Para Perguntas Frequentes</a></button>
+    </h2>
     </section>
-    <a href=#topicos>Voltar Para Perguntas Frequentes</a>
 
     <section id="cadastroTime">
        <h1> Como Cadastrar Time</h1>
@@ -81,9 +87,10 @@
        <img src="fotos/cadastrando_time_custom_9.png">
        <h2><p>9. Clique no botão Finalizar¹.</p></h2>
        <img src="fotos/cadastrando_time_custom_10.png">
-       <h2><p>10. O novo time será cadastrado.</p></h2>
+       <h2><p>10. O novo time será cadastrado.</p>
+       <a href=#topicos id="linkVoltar">Voltar Para Perguntas Frequentes</a>
+      </h2>
     </section> 
-    <a href=#topicos>Voltar Para Perguntas Frequentes</a>
 
      <section id="cadastroDiscipulado">        
        <h1> Como Cadastrar Discipulado</h1>
@@ -99,9 +106,10 @@
        <img src="fotos/cadastrando_discipulados_custom_5.png">
        <h2><p>5 - Insira sua senha¹ e depois clique no botão Confirmar². Caso queira retornar a tela anterior, clique no botão Voltar³.</h2>
        <img src="fotos/cadastrando_discipulados_custom_6.png">
-       <h2><p>6 - O discipulado está cadastrado.</h2>             
+       <h2><p>6 - O discipulado está cadastrado.</p>  
+        <a href=#topicos id="linkVoltar">Voltar Para Perguntas Frequentes</a>
+      </h2>  
      </section>
-     <a href=#topicos>Voltar Para Perguntas Frequentes</a>
 
      <section id="cadastroRevisionista">   
        <h1>Como Cadastrar Revisionista </h1>
@@ -118,14 +126,15 @@
         a tela anterior, clique no botão Voltar<sup id="textoSobreescrito">8</sup>. </p><h2>
        <img src="fotos/cadastrando_pro_revisao_custom_5.png">
        <h2><p>5 - O sistema emitirá a ficha do revisionista.Caso queira imprimir a ficha, clique no botão Imprimir¹. O revisionista
-       está cadastrado.</h2>
-       <img src="fotos/cadastrando_pro_revisao_custom_6.png">   
+       está cadastrado.</p>
+       <img src="fotos/cadastrando_pro_revisao_custom_6.png">  
+       <a href=#topicos id="linkVoltar">Voltar Para Perguntas Frequentes</a>
+      </h2>
      </section>
-     <a href=#topicos>Voltar Para Perguntas Frequentes</a>
 
      <section id="cadastroLiderParaRevisao"> 
        <h1>Como Trabalhar no Revisão de Vidas</h1> 
-       <h2>
+      <h2>
         <p> 1. Clique no Menu¹, Cadastro² e Trabalhar no Revisão de Vidas³.<p>
         <img src="fotos/trabalhando_no_revisao__custom_2.png">
         <p>2. Note que o CV listará quando ocorrerá o próximo Revisão¹. Clique no botão Selecionar².<p>
@@ -134,9 +143,9 @@
         <img src="fotos/trabalhando_no_revisao__custom_4.png">
         <p>4. O sistema emitirá uma mensagem dizendo que o cadastro foi efetivado. Caso queira retornar a tela anterior, clique no botão Voltar¹.</p>
         <img src="fotos/trabalhando_no_revisao__custom_5.png">   
-       </h2>         
+       <a href=#topicos id="linkVoltar">Voltar Para Perguntas Frequentes</a>
+      </h2> 
        <section>
-       <a href=#topicos>Voltar Para Perguntas Frequentes</a>
             
       
       <section id="lancamentoArregimentacao">
@@ -154,9 +163,9 @@
             7</sup>. 
             Você pode definir os resultados da busca usando filtros². <p></p>
             <img src="fotos/lancando_arregimentacao_custom_2.png">
-          </h2>
+          <a href=#topicos id="linkVoltar">Voltar Para Perguntas Frequentes</a>
+        </h2>
       </section>
-      <a href=#topicos>Voltar Para Perguntas Frequentes</a>
 
       <section id="lancamentoAtendimento">
           <h1> Como Lançar Atendimento</h1>
@@ -176,9 +185,9 @@
               <p>5 - Após inserir o comentário, ele poderá ser visualizado na tela de Atendimento clicando no botão ¹. Caso deseje excluir
               o comentário, clique no botão².</p>
               <img src="fotos/cadastrando_atendimento_custom_5.png"> 
-          </h2>
+          <a href=#topicos id="linkVoltar">Voltar Para Perguntas Frequentes</a>
+        </h2>
       </section>
-      <a href=#topicos>Voltar Para Perguntas Frequentes</a>
 
       <section id="lancamentoParceiroDeDeus">
           <h1> Como Lançar Parceiro De Deus</h1>
@@ -195,9 +204,9 @@
               <sub id="textoSobreescrito">8</sub>. Caso queira retornar a tela inicial, clique no botão Voltar<sub id="textoSobreescrito">7</sub></p>
               <img src="fotos/cadastrando_parceiroDeDeus_custom_3.png">
               <p>5. O Parceiro de Deus será agendado podendo ser confirmado ou não. </p>
-            </h2>
+            <a href=#topicos id="linkVoltar">Voltar Para Perguntas Frequentes</a>
+          </h2>
       </section>
-      <a href=#topicos>Voltar Para Perguntas Frequentes</a>
 
       <section id="gerandoReposicao">
           <h1> Como Gerar uma Reposição</h1>
@@ -210,9 +219,10 @@
               <img src="fotos/gerando_reposicao_custom_3.png">
               <p>4.O sistema gerará a reposição da aula.</p>
               <img src="fotos/gerando_reposicao_custom_4.png">
-          </h2>
+          
+          <a href=#topicos id="linkVoltar">Voltar Para Perguntas Frequentes</a>
+        </h2>
       </section>
-      <a href=#topicos>Voltar Para Perguntas Frequentes</a>
 
       <section id="alterandoPerfil">
           <h1>Como Alterar Perfil</h1> 
@@ -239,15 +249,17 @@
               <img src="fotos/alterando_perfil_custom9.png"> 
               <p>8. Insira sua nova senha¹, repita² e depois clique no botão Alterar³. A senha será alterada.</p>
              <img src="fotos/alterando_o_perfil_custom_10.png"> 
-            </h2>
+          <a href=#topicos id="linkVoltar">Voltar Para Perguntas Frequentes</a>
+        </h2>
       </section>
-      <a href=#topicos>Voltar Para Perguntas Frequentes</a>
 
       </div>
     </div>
 
-<script src="javaScript.js">
-</script>
-<link type="text/css" rel="stylesheet" media="screen" href="style.css"/>
+<script src="bootstrap/js/jquery.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+
 </body>
 </html>
